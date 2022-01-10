@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom'
+// Redux
+import store from './store'
+import { Provider } from 'react-redux'
+import { Navbar, Footer } from './components'
+import { About, Home, Portfolio } from './views'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Provider store={store}>
+      <div className="styleDark">
+        <Navbar />
+        <div className="content">
+          <Routes>
+            {/* Public Routes */}
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            {/* Protected Routes */}
+            {/* "No Match" Route */}
+            <Route
+              path="*"
+              element={
+                <main className="m-2 text-center text-warning alert alert-warning">
+                  <>There's nothing here!</>
+                </main>
+              }
+            />
+          </Routes>
+        </div>
+        <Footer />
+      </div>
+    </Provider>
+  )
 }
-
-export default App;

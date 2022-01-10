@@ -1,0 +1,30 @@
+.about {
+
+    .row {
+        height: 100vh;
+
+        .background {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-image: url("https://d3f86pfw66amx.cloudfront.net/uncode/wp-content/uploads/2021/03/pexels-thisisengineering-3861961.webp");
+            min-height: 300px;
+        }
+
+        .bio {
+            .wrapper {
+                h1 {
+                    font-weight: 500;
+                    margin: 0;
+                    font-family: Jost;
+                }
+
+                p {
+                    font-family: 'Roboto Mono';
+                    line-height: 1.75;
+                }
+            }
+        }
+
+    }
+}

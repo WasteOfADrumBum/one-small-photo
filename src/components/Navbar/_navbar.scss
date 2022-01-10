@@ -1,0 +1,72 @@
+.navbar {
+
+    a,
+    a:visited,
+    a:active,
+    a:hover {
+        color: white !important;
+    }
+
+    .navbar-brand {
+        .oneSmall {
+            margin-bottom: 5px;
+        }
+
+        .polaroid {
+            $size: 20px;
+
+            background-color: white;
+            width: $size + 5px;
+            height: $size + 7px;
+            margin: 2px;
+
+            .inner {
+                display: flex;
+                margin: 0 auto;
+                background-color: black;
+                color: white;
+                padding: 5px;
+                margin-top: 1px;
+                width: $size + 2px;
+                height: $size;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    .dropdown-menu {
+        background-color: rgba(0, 0, 0, .2);
+    }
+
+    .iconLinksInNavbarWrapper {
+        @media screen and (max-width: 992px) {
+            display: none
+        }
+
+        .iconLinksInNavbar {
+            &:before {
+                content: "";
+                position: relative;
+                bottom: 5px;
+                display: inline-block;
+                width: 52px;
+                height: 1px;
+                background-color: #c1c1c1;
+                margin: 0 20px 0 32px;
+            }
+
+            .socialButtonLink {
+                color: white
+            }
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        ul {
+            background-color: rgba(0, 0, 0, .2);
+            padding: 1rem;
+            border-radius: 10px;
+        }
+    }
+}

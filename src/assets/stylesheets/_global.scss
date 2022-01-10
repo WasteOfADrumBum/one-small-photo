@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* IE 10-11 didn't like using min-height */
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+#root {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: max-content 1fr auto;
+    grid-template-areas:
+        "nav"
+        "main"
+        "footer";
+
+    nav {
+        grid-area: nav;
+    }
+
+    .container {
+        grid-area: main;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
+
+.styleDark {
+    background-color: #101213;
+    color: white;
+
+    .content {
+        height: 100vh;
+    }
+}
