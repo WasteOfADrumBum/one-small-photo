@@ -1,5 +1,6 @@
 import React from 'react'
 import './_footer.scss'
+import { LoginButton } from '../../components'
 
 const Footer = () => {
   return (
@@ -11,13 +12,7 @@ const Footer = () => {
         </div>
         <div>
           <a
-            href="https://www.facebook.com/WasteOfADrumBum"
-            className="me-4 text-reset"
-          >
-            <i className="bi bi-facebook"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/one_small_family/"
+            href="https://www.instagram.com/onesmallphoto/"
             className="me-4 text-reset"
           >
             <i className="bi bi-instagram"></i>
@@ -59,55 +54,57 @@ const Footer = () => {
                 where I'm hosting an assortment of animations.
               </p>
             </div>
-            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Galleries</h6>
-              <p>
-                <a href="/" className="text-reset">
-                  Studio
-                </a>
-              </p>
-              <p>
-                <a href="/" className="text-reset">
-                  Lifestyle
-                </a>
-              </p>
-              <p>
-                <a href="/" className="text-reset">
-                  Modeling
-                </a>
-              </p>
-              <p>
-                <a href="/" className="text-reset">
-                  Wedding
-                </a>
-              </p>
-              <p>
-                <a href="/" className="text-reset">
-                  Landscapes
-                </a>
-              </p>
-            </div>
-            <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
-              <p>
-                <a href="/" className="text-reset">
-                  Home
-                </a>
-              </p>
-              <p>
-                <a href="/about" className="text-reset">
-                  About
-                </a>
-              </p>
+            <div className="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+              <h6 className="text-uppercase fw-bold mb-4">One Small Photo</h6>
+              <div className="row">
+                <div className="col-md-6">
+                  <p>
+                    <a href="/" className="text-reset">
+                      Home
+                    </a>
+                  </p>
+                  <p>
+                    <a href="/portfolio" className="text-reset">
+                      Portfolio
+                    </a>
+                  </p>
+                  <p>
+                    <a href="/achievements" className="text-reset">
+                      Achievements
+                    </a>
+                  </p>
+                </div>
+                <div className="col-md-6">
+                  <p>
+                    <a href="/legacy" className="text-reset">
+                      Legacy
+                    </a>
+                  </p>
+                  <p>
+                    <a href="/rates" className="text-reset">
+                      Rates
+                    </a>
+                  </p>
+                  <p>
+                    <a href="/about" className="text-reset">
+                      About
+                    </a>
+                  </p>
+                </div>
+              </div>
             </div>
             <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
+              <h6 className="text-uppercase fw-bold mb-4">
+                <a href="/contact" className="text-reset">
+                  Contact
+                </a>
+              </h6>
               <p>
                 <i className="bi bi-house me-3"></i> Trinity NC USA
               </p>
               <p>
                 <i className="bi bi-envelope me-3"></i>
-                jmsmall89@gmail.com
+                onesmallphoto@gmail.com
               </p>
               <p>
                 <i className="bi bi-phone me-3"></i> 828.333.8983
@@ -118,7 +115,7 @@ const Footer = () => {
       </section>
       {/* Copyright */}
       <div className="text-center p-4">
-        © 2022 Copyright:{' '}
+        <LoginButton /> 2022 Copyright:{' '}
         <a
           className="text-reset fw-bold"
           href="https://github.com/WasteOfADrumBum"

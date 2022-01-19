@@ -10,10 +10,10 @@ export const INBOX_FAIL = 'INBOX_FAIL'
 export const INBOX_SUCCESS = 'INBOX_SUCCESS'
 
 // @Route   GET api/inbox
-// @Desc    Read All Review
-// @Action  readReviews()
+// @Desc    Read All Inbox
+// @Action  readAllInboxEntries()
 // @Access  Private
-export const readReviews = () => async (dispatch) => {
+export const readAllInboxEntries = () => async (dispatch) => {
   try {
     const res = await axios.get('/api/inbox')
     dispatch({
@@ -35,10 +35,10 @@ export const readReviews = () => async (dispatch) => {
 }
 
 // @Route   GET api/inbox/:id
-// @Desc    Read Review by ID
-// @Action  readReview()
+// @Desc    Read Inbox by ID
+// @Action  readInboxEntry()
 // @Access  Private
-export const readReview = (id) => async (dispatch) => {
+export const readInboxEntry = (id) => async (dispatch) => {
   dispatch({ type: RESET_INBOX })
   try {
     const res = await axios.get(`/api/inbox/${id}`)
@@ -61,10 +61,10 @@ export const readReview = (id) => async (dispatch) => {
 }
 
 // @Route   POST api/inbox/create-inbox
-// @Desc    Create Review
-// @Action  createReview()
+// @Desc    Create Inbox
+// @Action  createInbox()
 // @Access  Private
-export const createReview = (formData) => async (dispatch) => {
+export const createInbox = (formData) => async (dispatch) => {
   try {
     const config = {
       headers: {
@@ -87,16 +87,20 @@ export const createReview = (formData) => async (dispatch) => {
 
     dispatch({
       type: INBOX_FAIL,
-      payload: { msg: err.response.statusText, status: err.response.status },
+      payload: {
+        msg: err.response.statusText,
+        status: err.response.status,
+        errors: err.response.data,
+      },
     })
   }
 }
 
 // @Route   PUT api/inbox/update-inbox/:id
-// @Desc    Update Review
-// @Action  updateReview()
+// @Desc    Update Inbox
+// @Action  updateInbox()
 // @Access  Private
-export const updateReview = (id, formData) => async (dispatch) => {
+export const updateInbox = (id, formData) => async (dispatch) => {
   try {
     const config = {
       headers: {
@@ -122,17 +126,21 @@ export const updateReview = (id, formData) => async (dispatch) => {
 }
 
 // @Route   PUT api/inbox/update-inbox-status/:id
-// @Desc    Update Review Status Only
-// @Action  updateReviewStatus()
+// @Desc    Update Inbox Status Only
+// @Action  updateInboxStatus()
 // @Access  Private
-export const updateReviewStatus = (id) => async (dispatch) => {
+export const updateInboxStatus = (id, formData) => async (dispatch) => {
   try {
     const config = {
       headers: {
         'Content-Type': 'application/json',
       },
     }
-    const res = await axios.post(`/api/inbox/update-inbox-status/${id}`, config)
+    const res = await axios.post(
+      `/api/inbox/update-inbox-status/${id}`,
+      formData,
+      config,
+    )
     dispatch({
       type: UPDATE_INBOX,
       payload: res.data,
@@ -147,10 +155,10 @@ export const updateReviewStatus = (id) => async (dispatch) => {
 }
 
 // @Route   PUT api/inbox/update-inbox-comment/:id
-// @Desc    Update Review Status and Comment
-// @Action  updateReviewComment()
+// @Desc    Update Inbox Status and Comment
+// @Action  updateInboxComment()
 // @Access  Private
-export const updateReviewComment = (id) => async (dispatch) => {
+export const updateInboxComment = (id) => async (dispatch) => {
   try {
     const config = {
       headers: {
@@ -175,10 +183,10 @@ export const updateReviewComment = (id) => async (dispatch) => {
 }
 
 // @Route   DELTE api/inbox/delete-inbox/:id
-// @Desc    Delete Review
-// @Action  deleteReview()
+// @Desc    Delete Inbox
+// @Action  deleteInbox()
 // @Access  Private
-export const deleteReview = (id) => async (dispatch) => {
+export const deleteInbox = (id) => async (dispatch) => {
   if (
     window.confirm(
       'Are you sure you want to delete this inbox? This cannot be undone.',
@@ -200,10 +208,10 @@ export const deleteReview = (id) => async (dispatch) => {
   }
 }
 
-// @Desc    reset Review
-// @Action  resetReview()
+// @Desc    reset Inbox
+// @Action  resetInbox()
 // @Access  Private
-export const resetReview = () => async (dispatch) => {
+export const resetInbox = () => async (dispatch) => {
   dispatch({ type: INBOX_LOADING })
 
   try {

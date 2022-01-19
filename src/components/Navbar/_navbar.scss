@@ -2,9 +2,13 @@
 
     a,
     a:visited,
-    a:active,
-    a:hover {
+    a:active {
         color: white !important;
+        text-shadow: 0 0 .5rem #000;
+
+        &:hover {
+            color: #ffc107 !important
+        }
     }
 
     .navbar-brand {

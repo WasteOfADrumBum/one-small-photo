@@ -1,0 +1,10 @@
+.categoryInfo {
+    font-family: "Cedarville Cursive",
+        cursive;
+    text-align: center;
+
+    @media screen and (max-width:768px) {
+        text-align: start;
+        margin-top: 1rem;
+    }
+}

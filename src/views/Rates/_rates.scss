@@ -1,0 +1,24 @@
+.rates {
+    h1 {
+        font-family: 'EB Garamond',
+            'Cormorant Garamond',
+            'Adobe Garamond',
+            'Garamond',
+            Times,
+            serif;
+        font-weight: 400;
+        line-height: 1.26;
+        letter-spacing: .017em;
+        word-spacing: 0.02em;
+    }
+
+    .card {
+        img {
+            aspect-ratio: 1626 / 1080;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}

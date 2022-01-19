@@ -1,3 +1,7 @@
 export { default as Navbar } from './Navbar'
 export { default as Footer } from './Footer'
 export { default as MasonryGallery } from './MasonryGallery'
+export { default as CategoryInfo } from './CategoryInfo'
+export { default as LoginButton } from './LoginButton'
+export { default as LogoutButton } from './LogoutButton'
+export { default as Loading } from './Loading'

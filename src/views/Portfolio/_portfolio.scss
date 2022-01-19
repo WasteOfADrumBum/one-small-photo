@@ -17,24 +17,36 @@
         letter-spacing: .5em;
         color: #969696;
         text-transform: uppercase;
-        margin: 0;
-        padding: 0 0 46px;
         line-height: 2;
         font-size: calc(11px * 1);
 
-        li {
-            display: inline-flex;
+        @media screen and (max-width:768px) {
+            flex-direction: column;
+        }
+
+        .nav-item {
+            text-align: start;
         }
 
         a,
         .catItem {
-            margin-right: 43px;
             color: #969696;
             text-decoration: none;
+
+            /* Divider Horz/Vert */
+            &.divider::before {
+                content: "|";
+                letter-spacing: 0;
+
+                @media screen and (max-width:768px) {
+                    content: "──────────────────────────────";
+                }
+            }
 
             &:hover {
                 color: #eee;
             }
         }
     }
+
 }

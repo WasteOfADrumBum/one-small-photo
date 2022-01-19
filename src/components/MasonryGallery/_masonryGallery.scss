@@ -1,7 +1,29 @@
 .masonryGallery {
-    .imageWrap {
-        img {
-            max-width: 250px;
+    .card {
+        &:hover {
+            cursor: pointer;
+
+            .image {
+                opacity: 0.3;
+            }
+
+            p {
+                opacity: 1;
+            }
+        }
+
+        .image {
+            transition: .5s ease;
+            backface-visibility: hidden;
+            opacity: 1;
+        }
+
+        p {
+            opacity: 0;
+            transition: .5s ease;
+            font-family: 'Cedarville Cursive',
+                cursive;
         }
     }
+
 }

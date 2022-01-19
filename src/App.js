@@ -1,11 +1,39 @@
+import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 // Redux
 import store from './store'
 import { Provider } from 'react-redux'
-import { Navbar, Footer } from './components'
-import { About, Home, Portfolio } from './views'
+// Auth0
+import { useAuth0, withAuthenticationRequired } from '@auth0/auth0-react'
+import { Navbar, Footer, Loading } from './components'
+import {
+  About,
+  Achievements,
+  Legacy,
+  Home,
+  Portfolio,
+  Contact,
+  Inbox,
+  Rates,
+} from './views'
 
 export default function App() {
+  const { isLoading, error } = useAuth0()
+
+  if (isLoading) {
+    return <div>Loading...</div>
+  }
+  if (error) {
+    return <div>Oops... {error.message}</div>
+  }
+
+  const ProtectedRoute = ({ component, ...args }) => {
+    const Cp = withAuthenticationRequired(component, {
+      onRedirecting: () => <Loading />,
+    })
+    return <Cp {...args} />
+  }
+
   return (
     <Provider store={store}>
       <div className="styleDark">
@@ -14,15 +42,25 @@ export default function App() {
           <Routes>
             {/* Public Routes */}
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/achievements" element={<Achievements />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/legacy" element={<Legacy />} />
+            <Route path="/rates" element={<Rates />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
             {/* Protected Routes */}
+            <Route
+              path="/inbox"
+              element={<ProtectedRoute component={Inbox} />}
+            />
             {/* "No Match" Route */}
             <Route
               path="*"
               element={
-                <main className="m-2 text-center text-warning alert alert-warning">
-                  <>There's nothing here!</>
+                <main>
+                  <div className="my-5 text-center text-warning alert alert-warning">
+                    There's nothing here!
+                  </div>
                 </main>
               }
             />

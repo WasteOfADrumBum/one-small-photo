@@ -1,1 +1,70 @@
-.home {}
+.home {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 300px;
+    background-blend-mode: saturation;
+
+    .oneSmallPhoto {
+        height: 100vh;
+
+        @media screen and (max-width:768px) {
+            flex-direction: column;
+        }
+
+        .word {
+            font-family: 'Anton', sans-serif;
+            perspective: 1000px;
+            display: inline-block;
+            font-size: 6rem;
+            user-select: none;
+            line-height: .8;
+            -webkit-text-stroke: .06rem black;
+        }
+
+        .polaroid {
+
+            font-family: 'Homemade Apple',
+                cursive;
+            font-size: 1.25rem;
+            color: #000;
+
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    text-align: center;
+                    display: inline-block;
+                    list-style: none;
+                    position: relative;
+                    border: solid .75rem #fff;
+                    background: #fff;
+                    box-shadow: 0 0 .938rem 0px #555;
+                    transition: all 1s ease;
+                    top: 3.125rem;
+
+                    @media screen and (max-width:768px) {
+                        top: 0.625rem;
+                    }
+
+
+                    &:hover {
+                        top: 0px;
+                        opacity: 0.5;
+                    }
+
+                    &:nth-child(1) {
+                        transform: rotate(10deg);
+                    }
+
+                    img {
+                        object-fit: cover;
+                        width: 200px;
+                        height: 200px
+                    }
+                }
+            }
+        }
+    }
+}

@@ -15,7 +15,7 @@ const ReviewReducer = (
     inboxEntry: null, // Pulls in Specific Review
     loading: false, // Has everything needed been loaded
     success: {},
-    error: {},
+    error: null,
   },
   action,
 ) => {

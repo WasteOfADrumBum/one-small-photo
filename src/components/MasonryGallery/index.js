@@ -1,83 +1,124 @@
 import React, { useState } from 'react'
-import Gallery from 'react-photo-gallery'
 import Carousel, { Modal, ModalGateway } from 'react-images'
+import { XMasonry, XBlock } from 'react-xmasonry'
 import './_masonryGallery.scss'
 import { ImageJSON } from '../../utils'
 
 const MasonryGallery = ({ category }) => {
   const [filteredCategories, setFilteredCategories] = useState([])
   const [currentImage, setCurrentImage] = useState(0)
-  const [viewerIsOpen, setViewerIsOpen] = useState(false)
+  const [modalIsOpen, setModalIsOpen] = useState(false)
 
-  const filterByCategory = (category) => {
-    let filteredArr = []
+  const shuffle = (array) => {
+    let currentIndex = array.length,
+      randomIndex
 
-    switch (category) {
-      case 'portrait':
-        filteredArr = ImageJSON.filter(
-          (image) => image.imgCategory === 'portrait',
-        )
-        break
-      case 'model':
-        filteredArr = ImageJSON.filter((image) => image.imgCategory === 'model')
-        break
-      case 'landscape':
-        filteredArr = ImageJSON.filter(
-          (image) => image.imgCategory === 'landscape',
-        )
-        break
-      case 'wedding':
-        filteredArr = ImageJSON.filter(
-          (image) => image.imgCategory === 'wedding',
-        )
-        break
-      default:
-        filteredArr = ImageJSON
+    // While there remain elements to shuffle...
+    while (currentIndex !== 0) {
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex)
+      currentIndex--
+
+      // And swap it with the current element.
+      ;[array[currentIndex], array[randomIndex]] = [
+        array[randomIndex],
+        array[currentIndex],
+      ]
     }
-    setFilteredCategories(filteredArr)
-  }
 
+    return array
+  }
   React.useEffect(() => {
+    const filterByCategory = (category) => {
+      let shuffleArr = shuffle(ImageJSON)
+      let filteredArr = []
+
+      switch (category) {
+        case 'portrait':
+          filteredArr = shuffleArr.filter(
+            (image) => image.imgCategory === 'portrait',
+          )
+          break
+        case 'model':
+          filteredArr = shuffleArr.filter(
+            (image) => image.imgCategory === 'model',
+          )
+          break
+        case 'landscape':
+          filteredArr = shuffleArr.filter(
+            (image) => image.imgCategory === 'landscape',
+          )
+          break
+        case 'wedding':
+          filteredArr = shuffleArr.filter(
+            (image) => image.imgCategory === 'wedding',
+          )
+          break
+        case 'event':
+          filteredArr = shuffleArr.filter(
+            (image) => image.imgCategory === 'event',
+          )
+          break
+        default:
+          filteredArr = shuffleArr
+      }
+      setFilteredCategories(filteredArr)
+    }
+
     if (category && (category !== '' || category !== undefined)) {
       filterByCategory(category)
     }
   }, [category])
 
-  const openLightbox = useCallback((event, { photo, index }) => {
+  const openLightbox = (e, index) => {
     setCurrentImage(index)
-    setViewerIsOpen(true)
-  }, [])
+    setModalIsOpen(true)
+  }
 
   const closeLightbox = () => {
     setCurrentImage(0)
-    setViewerIsOpen(false)
+    setModalIsOpen(false)
   }
 
   return (
-    <div className="masonryGallery mt-5">
-      <>
-        {category && (category !== '' || category !== undefined) ? (
-          <>
-            <Gallery photos={filteredCategories} onClick={openLightbox} />
-            <ModalGateway>
-              {viewerIsOpen ? (
-                <Modal onClose={closeLightbox}>
-                  <Carousel
-                    currentIndex={currentImage}
-                    views={photos.map((x) => ({
-                      ...x,
-                      srcset: x.srcSet,
-                      caption: x.title,
-                    }))}
-                  />
-                </Modal>
-              ) : null}
-            </ModalGateway>
-          </>
-        ) : (
-          <p>Loading...</p>
-        )}
-      </>
+    <div className="masonryGallery">
+      {category && (category !== '' || category !== undefined) ? (
+        <>
+          <XMasonry>
+            {filteredCategories.map((image, i) => {
+              return (
+                <XBlock key={i}>
+                  <div
+                    className="card bg-transparent p-1"
+                    onClick={(e) => openLightbox(e, i)}
+                  >
+                    <img
+                      src={image.source}
+                      alt={image.subject}
+                      className="position-relative image"
+                    />
+                    <p className="text-white position-absolute bottom-0 start-0 ps-3">
+                      {image.imgSubject}
+                    </p>
+                  </div>
+                </XBlock>
+              )
+            })}
+          </XMasonry>
+          <ModalGateway>
+            {modalIsOpen ? (
+              <Modal onClose={closeLightbox}>
+                <Carousel
+                  currentIndex={currentImage}
+                  views={filteredCategories}
+                />
+              </Modal>
+            ) : null}
+          </ModalGateway>
+        </>
+      ) : (
+        <p>Loading...</p>
+      )}
     </div>
   )
 }

@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+const { body, validationResult } = require('express-validator')
 
 // load Model
 const inboxModel = require('../models/inboxModel')
@@ -49,56 +50,135 @@ router.get('/:id', async (req, res) => {
 // @Desc    Create InboxEntry
 // @Action  createInboxEntry()
 // @Access  Private
-router.post('/create-inbox', async (req, res) => {
-  const { firstName, lastName, email, comment, type, date, read } = req.body
+router.post(
+  '/create-inbox',
+  [
+    // Form Validation
+    body('firstName')
+      .not()
+      .isEmpty()
+      .trim()
+      .escape()
+      .withMessage('Enter a First Name'),
+    body('lastName')
+      .not()
+      .isEmpty()
+      .trim()
+      .escape()
+      .withMessage('Enter a Last name'),
+    body('email').isEmail().withMessage('Enter a valid email'),
+    body('phone').isMobilePhone().withMessage('Enter a valid phone number'),
+    body('type').not().isEmpty().withMessage('Enter a session type'),
+    body('location')
+      .not()
+      .isEmpty()
+      .withMessage('Enter a location (atleast a city)'),
+    body('method')
+      .not()
+      .isEmpty()
+      .withMessage('Select a preferred method of contact'),
+  ],
+  async (req, res) => {
+    console.log(req.body)
+    const {
+      firstName,
+      lastName,
+      email,
+      phone,
+      instagramHandle,
+      comment,
+      type,
+      date,
+      budget,
+      location,
+      referral,
+      read,
+      method,
+    } = req.body
 
-  const newEntry = {
-    contactInfo: {
-      name: {
-        first: firstName || '',
-        last: lastName || '',
+    const newEntry = {
+      contactInfo: {
+        name: {
+          first: firstName,
+          last: lastName,
+        },
+        email: email,
+        phone: phone,
+        contactMethod: method,
+        instagramHandle: instagramHandle,
       },
-      email: email || '',
-    },
-    request: {
-      comment: comment || '',
-      type: type || '',
-      date: date || '',
-    },
-    read: read || false,
-  }
+      request: {
+        comment: comment,
+        type: type,
+        date: date,
+        budget: budget,
+        location: location,
+      },
+      referral: referral,
+      read: read,
+    }
 
-  try {
-    let inbox = new inboxModel(newEntry)
-    await inbox.save()
-    res.status(200).send('Success')
-  } catch (err) {
-    console.error(err.message)
-    res.status(500).send('Server Error')
-  }
-})
+    try {
+      const errors = validationResult(req)
+      //Check if there are errors
+      if (!errors.isEmpty()) {
+        console.log(errors)
+        //If so Send response status with the error message'
+        return res.status(500).json({ success: false, data: errors.array() })
+      }
+
+      let inbox = new inboxModel(newEntry)
+      await inbox.save()
+      res.status(200).json({
+        success: true,
+        message: 'Entry submitted successfully',
+      })
+    } catch (error) {
+      console.error(error.message)
+      res.status(500).json({ status: false, error: error.message })
+    }
+  },
+)
 
 // @Route   PUT api/inbox/update-inbox/:id
 // @Desc    Update InboxEntry
 // @Action  updateInboxEntry()
 // @Access  Private
 router.post('/update-inbox/:id', async (req, res) => {
-  const { firstName, lastName, email, comment, type, date, read } = req.body
+  const {
+    firstName,
+    lastName,
+    email,
+    phone,
+    instagramHandle,
+    comment,
+    type,
+    date,
+    budget,
+    location,
+    referral,
+    read,
+  } = req.body
 
   const newEntry = {
     contactInfo: {
       name: {
-        first: firstName || '',
-        last: lastName || '',
+        first: firstName,
+        last: lastName,
       },
-      email: email || '',
+      email: email,
+      phone: phone,
+      instagramHandle: instagramHandle,
     },
     request: {
-      comment: comment || '',
-      type: type || '',
-      date: date || '',
+      comment: comment,
+      type: type,
+      date: date,
+      budget: budget,
+      location: location,
     },
-    read: read || false,
+    referral: referral,
+    read: read,
   }
 
   try {
@@ -120,6 +200,35 @@ router.post('/update-inbox/:id', async (req, res) => {
     res.json(inbox)
   } catch (err) {
     console.error('Update Inbox Entry Route: ', err.message)
+    res.status(500).send('Server Error')
+  }
+})
+
+// @Route   PUT api/inbox/update-inbox-status/:id
+// @Desc    Update Inbox Status Only
+// @Action  updateInboxStatus()
+// @Access  Private
+router.post('/update-inbox-status/:id', async (req, res) => {
+  const { read } = req.body
+  try {
+    let inbox = await inboxModel.findById(req.params.id)
+    // Check if it exsists
+    if (!inbox) {
+      return res.status(400).json({
+        errors: [{ msg: 'Entry does not exist' }],
+      })
+    }
+
+    inbox = await inboxModel.findOneAndUpdate(
+      {
+        _id: req.params.id,
+      },
+      { $set: { read: read } },
+      { new: true },
+    )
+    res.json(inbox)
+  } catch (err) {
+    console.error('updateInbox Route: ', err.message)
     res.status(500).send('Server Error')
   }
 })

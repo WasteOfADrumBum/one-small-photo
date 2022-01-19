@@ -1,0 +1,28 @@
+.achievements {
+    h1 {
+        font-family: 'EB Garamond',
+            'Cormorant Garamond',
+            'Adobe Garamond',
+            'Garamond',
+            Times,
+            serif;
+        font-weight: 400;
+        line-height: 1.26;
+        letter-spacing: .017em;
+        word-spacing: 0.02em;
+    }
+
+    .logo {
+        font-family: 'Times New Roman', Times, serif;
+
+        .photographer {
+            text-transform: capitalize;
+        }
+
+        .forum {
+            color: #6d8e91
+        }
+
+
+    }
+}
