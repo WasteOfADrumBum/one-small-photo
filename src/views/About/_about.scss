@@ -1,7 +1,8 @@
 .about {
 
     .row {
-        height: 100vh;
+        min-height: 100vh;
+        max-width: 102vw;
 
         .background {
             background-repeat: no-repeat;
