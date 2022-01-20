@@ -18,6 +18,12 @@ const Footer = () => {
             <i className="bi bi-instagram"></i>
           </a>
           <a
+            href="https://www.modelmayhem.com/OneSmallPhoto"
+            className="me-4 text-reset"
+          >
+            <i className="bi bi-camera2" />
+          </a>
+          <a
             href="https://www.linkedin.com/in/joshuamsmall/"
             className="me-4 text-reset"
           >
