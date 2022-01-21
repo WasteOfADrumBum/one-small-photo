@@ -338,6 +338,22 @@ export const ImageJSON = [
     imgPolaroid: false,
     source: './assets/images/landscape-wilmington-downtown.jpg',
   },
+  {
+    imgSubject: 'Downtown Asheville NC',
+    imgCaption: 'Asheville NC',
+    imgCategory: 'landscape',
+    imgOrientation: 'landscape',
+    imgPolaroid: true,
+    source: './assets/images/landscape-asheville-1.jpg',
+  },
+  {
+    imgSubject: 'Downtown Asheville NC',
+    imgCaption: 'Asheville NC',
+    imgCategory: 'landscape',
+    imgOrientation: 'landscape',
+    imgPolaroid: false,
+    source: './assets/images/landscape-asheville-2.jpg',
+  },
   /* Event */
   {
     imgSubject: 'Chevelle',
@@ -429,6 +445,14 @@ export const ImageJSON = [
     imgPolaroid: false,
     source: './assets/images/cosplay-jay-link-3.jpg',
   },
+  {
+    imgSubject: 'Link - Jay B',
+    imgCaption: 'Studio - Greensboro NC',
+    imgCategory: 'cosplay',
+    imgOrientation: 'landscape',
+    imgPolaroid: false,
+    source: './assets/images/cosplay-jay-link-4.jpg',
+  },
   /* Prodcut */
   {
     imgSubject: 'Jay B',
@@ -438,6 +462,14 @@ export const ImageJSON = [
     imgPolaroid: false,
     source: './assets/images/product-jay-1.jpg',
   },
+  {
+    imgSubject: 'Washington Apple',
+    imgCaption: 'Wilmington NC',
+    imgCategory: 'product',
+    imgOrientation: 'landscape',
+    imgPolaroid: false,
+    source: './assets/images/product-washington-apple.jpg',
+  },
   /* Nature | Pets */
   {
     imgSubject: 'Snow Dogs',
@@ -446,6 +478,22 @@ export const ImageJSON = [
     imgOrientation: 'landscape',
     imgPolaroid: false,
     source: './assets/images/nature-snow-dogs.jpg',
+  },
+  {
+    imgSubject: 'Ducks',
+    imgCaption: 'Greensboro NC',
+    imgCategory: 'product',
+    imgOrientation: 'landscape',
+    imgPolaroid: true,
+    source: './assets/images/nature-ducks.jpg',
+  },
+  {
+    imgSubject: 'Flower',
+    imgCaption: 'Greensboro NC',
+    imgCategory: 'product',
+    imgOrientation: 'landscape',
+    imgPolaroid: false,
+    source: './assets/images/nature-flower.jpg',
   },
   /* Award Winning */
   {
