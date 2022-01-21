@@ -20,7 +20,7 @@ const Rates = () => {
             <div className="col-lg-3">
               <div className="card bg-transparent border-0">
                 <img
-                  src="./assets/images/wedding-tori-1.jpg"
+                  src="https://onsmallphoto.s3.amazonaws.com/wedding-tori-1.jpg"
                   className="card-img-top"
                   alt="..."
                 />
@@ -39,7 +39,7 @@ const Rates = () => {
             <div className="col-lg-3">
               <div className="card bg-transparent border-0">
                 <img
-                  src="./assets/images/wedding-nelson-rings.jpg"
+                  src="https://onsmallphoto.s3.amazonaws.com/wedding-nelson-rings.jpg"
                   className="card-img-top"
                   alt="..."
                 />
@@ -58,7 +58,7 @@ const Rates = () => {
             <div className="col-lg-3">
               <div className="card bg-transparent border-0">
                 <img
-                  src="./assets/images/event-olg-1.jpg"
+                  src="https://onsmallphoto.s3.amazonaws.com/event-olg-1.jpg"
                   className="card-img-top"
                   alt="..."
                 />
@@ -109,7 +109,7 @@ const Rates = () => {
             <div className="col-lg-3">
               <div className="card bg-transparent border-0">
                 <img
-                  src="./assets/images/portrait-cassie-1.jpg"
+                  src="https://onsmallphoto.s3.amazonaws.com/portrait-cassie-1.jpg"
                   className="card-img-top"
                   alt="..."
                 />
@@ -128,7 +128,7 @@ const Rates = () => {
             <div className="col-lg-3">
               <div className="card bg-transparent border-0">
                 <img
-                  src="./assets/images/portrait-owen-2.jpg"
+                  src="https://onsmallphoto.s3.amazonaws.com/portrait-owen-2.jpg"
                   className="card-img-top"
                   alt="..."
                 />
@@ -166,7 +166,7 @@ const Rates = () => {
             <div className="col-lg-3">
               <div className="card bg-transparent border-0">
                 <img
-                  src="./assets/images/nature-snow-dogs.jpg"
+                  src="https://onsmallphoto.s3.amazonaws.com/nature-snow-dogs.jpg"
                   className="card-img-top"
                   alt="..."
                 />
@@ -202,7 +202,7 @@ const Rates = () => {
             <div className="col-lg-3">
               <div className="card bg-transparent border-0">
                 <img
-                  src="./assets/images/product-jay-1.jpg"
+                  src="https://onsmallphoto.s3.amazonaws.com/product-jay-1.jpg"
                   className="card-img-top"
                   alt="..."
                 />
@@ -275,7 +275,7 @@ const Rates = () => {
             <div className="col-lg-3">
               <div className="card bg-transparent border-0">
                 <img
-                  src="./assets/images/portrait-sirina-photobooth.png"
+                  src="https://onsmallphoto.s3.amazonaws.com/portrait-sirina-photobooth.png"
                   className="card-img-top"
                   alt="..."
                 />
@@ -328,7 +328,7 @@ const Rates = () => {
             <div className="col-lg-3">
               <div className="card bg-transparent border-0">
                 <img
-                  src="./assets/images/portrait-nova.jpg"
+                  src="https://onsmallphoto.s3.amazonaws.com/portrait-nova.jpg"
                   className="card-img-top"
                   alt="..."
                 />
@@ -362,7 +362,7 @@ const Rates = () => {
             <div className="col-lg-3">
               <div className="card bg-transparent border-0">
                 <img
-                  src="./assets/images/event-pb-2.jpg"
+                  src="https://onsmallphoto.s3.amazonaws.com/event-pb-2.jpg"
                   className="card-img-top"
                   alt="..."
                 />
@@ -436,7 +436,7 @@ const Rates = () => {
             <div className="col-lg-3">
               <div className="card bg-transparent border-0">
                 <img
-                  src="./assets/images/boudoir-misha-1.jpg"
+                  src="https://onsmallphoto.s3.amazonaws.com/boudoir-misha-1.jpg"
                   className="card-img-top"
                   alt="..."
                 />

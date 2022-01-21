@@ -25,7 +25,7 @@ const Achievements = () => {
           </div>
           <div className="col-lg-4">
             <img
-              src="./assets/images/award-dusty.jpg"
+              src="https://onsmallphoto.s3.amazonaws.com/award-dusty.jpg"
               alt="34TH COLLEGE & HIGH SCHOOL PHOTOGRAPHY CONTEST"
               className="img-fluid rounded"
             />

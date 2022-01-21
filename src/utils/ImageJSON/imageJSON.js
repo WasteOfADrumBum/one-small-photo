@@ -6,7 +6,7 @@ export const ImageJSON = [
     imgCategory: 'portrait',
     imgOrientation: 'portrait',
     imgPolaroid: true,
-    source: './assets/images/portrait-hannah-1.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/portrait-hannah-1.jpg',
   },
   {
     imgSubject: 'Misha Cordon',
@@ -14,7 +14,7 @@ export const ImageJSON = [
     imgCategory: 'portrait',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/portrait-misha-1.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/portrait-misha-1.jpg',
   },
   {
     imgSubject: 'NOVA',
@@ -22,7 +22,7 @@ export const ImageJSON = [
     imgCategory: 'portrait',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/portrait-nova.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/portrait-nova.jpg',
   },
   {
     imgSubject: 'Owen',
@@ -30,7 +30,7 @@ export const ImageJSON = [
     imgCategory: 'portrait',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/portrait-owen-1.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/portrait-owen-1.jpg',
   },
   {
     imgSubject: 'Owen',
@@ -38,7 +38,7 @@ export const ImageJSON = [
     imgCategory: 'portrait',
     imgOrientation: 'landscape',
     imgPolaroid: true,
-    source: './assets/images/portrait-owen-2.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/portrait-owen-2.jpg',
   },
   {
     imgSubject: 'Pilot',
@@ -46,7 +46,7 @@ export const ImageJSON = [
     imgCategory: 'portrait',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/portrait-pilot-1.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/portrait-pilot-1.jpg',
   },
   {
     imgSubject: 'Stereotype',
@@ -54,7 +54,7 @@ export const ImageJSON = [
     imgCategory: 'portrait',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/portrait-stereotype-1.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/portrait-stereotype-1.jpg',
   },
   {
     imgSubject: 'Jay B',
@@ -62,7 +62,7 @@ export const ImageJSON = [
     imgCategory: 'portrait',
     imgOrientation: 'portrait',
     imgPolaroid: true,
-    source: './assets/images/portrait-jay-4.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/portrait-jay-4.jpg',
   },
   {
     imgSubject: 'Romelo',
@@ -70,7 +70,7 @@ export const ImageJSON = [
     imgCategory: 'portrait',
     imgOrientation: 'landscape',
     imgPolaroid: true,
-    source: './assets/images/portrait-romelo-1.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/portrait-romelo-1.jpg',
   },
   {
     imgSubject: 'Cassie',
@@ -78,7 +78,7 @@ export const ImageJSON = [
     imgCategory: 'portrait',
     imgOrientation: 'landscape',
     imgPolaroid: true,
-    source: './assets/images/portrait-cassie-1.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/portrait-cassie-1.jpg',
   },
   {
     imgSubject: 'Romelo',
@@ -86,7 +86,7 @@ export const ImageJSON = [
     imgCategory: 'portrait',
     imgOrientation: 'landscape',
     imgPolaroid: true,
-    source: './assets/images/portrait-romelo-2.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/portrait-romelo-2.jpg',
   },
   /* Model */
   {
@@ -95,7 +95,7 @@ export const ImageJSON = [
     imgCategory: 'model',
     imgOrientation: 'portrait',
     imgPolaroid: false,
-    source: './assets/images/model-jay-2.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-jay-2.jpg',
   },
   {
     imgSubject: 'Sirina J Gisbon',
@@ -103,7 +103,7 @@ export const ImageJSON = [
     imgCategory: 'model',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/model-sirina-2.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-sirina-2.jpg',
   },
   {
     imgSubject: 'Terrance & Kaitlyn',
@@ -111,7 +111,7 @@ export const ImageJSON = [
     imgCategory: 'model',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/model-tk-1.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-tk-1.jpg',
   },
   {
     imgSubject: 'Amber',
@@ -119,7 +119,7 @@ export const ImageJSON = [
     imgCategory: 'model',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/model-amber-1.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-amber-1.jpg',
   },
   {
     imgSubject: 'Amber',
@@ -127,7 +127,7 @@ export const ImageJSON = [
     imgCategory: 'model',
     imgOrientation: 'portrait',
     imgPolaroid: false,
-    source: './assets/images/model-amber-2.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-amber-2.jpg',
   },
   {
     imgSubject: 'Brittany',
@@ -135,7 +135,7 @@ export const ImageJSON = [
     imgCategory: 'model',
     imgOrientation: 'portrait',
     imgPolaroid: false,
-    source: './assets/images/model-brittany-1.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-brittany-1.jpg',
   },
   {
     imgSubject: 'Brittany',
@@ -143,7 +143,7 @@ export const ImageJSON = [
     imgCategory: 'model',
     imgOrientation: 'portrait',
     imgPolaroid: false,
-    source: './assets/images/model-brittany-2.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-brittany-2.jpg',
   },
   {
     imgSubject: 'Casey',
@@ -151,7 +151,7 @@ export const ImageJSON = [
     imgCategory: 'model',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/model-casey-1.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-casey-1.jpg',
   },
   {
     imgSubject: 'Casey',
@@ -159,7 +159,7 @@ export const ImageJSON = [
     imgCategory: 'model',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/model-casey-2.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-casey-2.jpg',
   },
   {
     imgSubject: 'Jay B',
@@ -167,7 +167,7 @@ export const ImageJSON = [
     imgCategory: 'model',
     imgOrientation: 'portrait',
     imgPolaroid: false,
-    source: './assets/images/model-jay-3.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-jay-3.jpg',
   },
   {
     imgSubject: 'Sirina J Gisbon',
@@ -175,7 +175,7 @@ export const ImageJSON = [
     imgCategory: 'model',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/model-sirina-1.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-sirina-1.jpg',
   },
   {
     imgSubject: 'Sirina J Gisbon',
@@ -183,7 +183,7 @@ export const ImageJSON = [
     imgCategory: 'model',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/model-sirina-4.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-sirina-4.jpg',
   },
   {
     imgSubject: 'Sirina J Gisbon',
@@ -191,7 +191,7 @@ export const ImageJSON = [
     imgCategory: 'model',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/model-sirina-5.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-sirina-5.jpg',
   },
   {
     imgSubject: 'Sirina J Gisbon',
@@ -199,7 +199,7 @@ export const ImageJSON = [
     imgCategory: 'model',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/model-sirina-6.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-sirina-6.jpg',
   },
   {
     imgSubject: 'Sirina J Gisbon',
@@ -207,7 +207,7 @@ export const ImageJSON = [
     imgCategory: 'model',
     imgOrientation: 'portrait',
     imgPolaroid: false,
-    source: './assets/images/model-sirina-7.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-sirina-7.jpg',
   },
   {
     imgSubject: 'Terrance & Kaitlyn',
@@ -215,7 +215,7 @@ export const ImageJSON = [
     imgCategory: 'model',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/model-tk-2.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-tk-2.jpg',
   },
   {
     imgSubject: 'Terrance & Kaitlyn',
@@ -223,7 +223,7 @@ export const ImageJSON = [
     imgCategory: 'model',
     imgOrientation: 'portrait',
     imgPolaroid: false,
-    source: './assets/images/model-tk-3.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-tk-3.jpg',
   },
   {
     imgSubject: 'Terrance & Kaitlyn',
@@ -231,7 +231,7 @@ export const ImageJSON = [
     imgCategory: 'model',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/model-tk-4.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-tk-4.jpg',
   },
   {
     imgSubject: 'Billy - Nova',
@@ -239,7 +239,7 @@ export const ImageJSON = [
     imgCategory: 'model',
     imgOrientation: 'portrait',
     imgPolaroid: false,
-    source: './assets/images/model-billy-1.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-billy-1.jpg',
   },
   {
     imgSubject: 'Brittany',
@@ -247,7 +247,7 @@ export const ImageJSON = [
     imgCategory: 'model',
     imgOrientation: 'portrait',
     imgPolaroid: false,
-    source: './assets/images/model-brittany-3.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-brittany-3.jpg',
   },
   {
     imgSubject: 'Casey',
@@ -255,7 +255,7 @@ export const ImageJSON = [
     imgCategory: 'model',
     imgOrientation: 'portrait',
     imgPolaroid: false,
-    source: './assets/images/model-casey-3.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-casey-3.jpg',
   },
   {
     imgSubject: 'Casey',
@@ -263,7 +263,7 @@ export const ImageJSON = [
     imgCategory: 'model',
     imgOrientation: 'portrait',
     imgPolaroid: false,
-    source: './assets/images/model-casey-4.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-casey-4.jpg',
   },
   {
     imgSubject: 'Jay B',
@@ -271,7 +271,7 @@ export const ImageJSON = [
     imgCategory: 'model',
     imgOrientation: 'portrait',
     imgPolaroid: false,
-    source: './assets/images/model-jay-4.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-jay-4.jpg',
   },
   {
     imgSubject: 'Jay B',
@@ -279,7 +279,7 @@ export const ImageJSON = [
     imgCategory: 'model',
     imgOrientation: 'landscape',
     imgPolaroid: true,
-    source: './assets/images/model-jay-5.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-jay-5.jpg',
   },
   {
     imgSubject: 'Jay B',
@@ -287,7 +287,7 @@ export const ImageJSON = [
     imgCategory: 'model',
     imgOrientation: 'portrait',
     imgPolaroid: false,
-    source: './assets/images/model-jay-6.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-jay-6.jpg',
   },
   /* Landscape */
   {
@@ -296,7 +296,7 @@ export const ImageJSON = [
     imgCategory: 'landscape',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/landscape-kure-beach.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/landscape-kure-beach.jpg',
   },
   {
     imgSubject: 'Lake Boat',
@@ -304,7 +304,7 @@ export const ImageJSON = [
     imgCategory: 'landscape',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/landscape-boat.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/landscape-boat.jpg',
   },
   {
     imgSubject: 'Capitol Building',
@@ -312,7 +312,7 @@ export const ImageJSON = [
     imgCategory: 'landscape',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/landscape-dc.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/landscape-dc.jpg',
   },
   {
     imgSubject: "Johnny Mercer's Pier",
@@ -320,7 +320,7 @@ export const ImageJSON = [
     imgCategory: 'landscape',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/landscape-jmp.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/landscape-jmp.jpg',
   },
   {
     imgSubject: 'Our Lady of Grace',
@@ -328,7 +328,7 @@ export const ImageJSON = [
     imgCategory: 'landscape',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/landscape-olg.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/landscape-olg.jpg',
   },
   {
     imgSubject: 'River Street',
@@ -336,7 +336,8 @@ export const ImageJSON = [
     imgCategory: 'landscape',
     imgOrientation: 'portrait',
     imgPolaroid: false,
-    source: './assets/images/landscape-wilmington-downtown.jpg',
+    source:
+      'https://onsmallphoto.s3.amazonaws.com/landscape-wilmington-downtown.jpg',
   },
   {
     imgSubject: 'Downtown Asheville NC',
@@ -344,7 +345,7 @@ export const ImageJSON = [
     imgCategory: 'landscape',
     imgOrientation: 'landscape',
     imgPolaroid: true,
-    source: './assets/images/landscape-asheville-1.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/landscape-asheville-1.jpg',
   },
   {
     imgSubject: 'Downtown Asheville NC',
@@ -352,7 +353,7 @@ export const ImageJSON = [
     imgCategory: 'landscape',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/landscape-asheville-2.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/landscape-asheville-2.jpg',
   },
   /* Event */
   {
@@ -361,7 +362,7 @@ export const ImageJSON = [
     imgCategory: 'event',
     imgOrientation: 'landscape',
     imgPolaroid: true,
-    source: './assets/images/event-chevelle-1.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/event-chevelle-1.jpg',
   },
   {
     imgSubject: 'Michael',
@@ -369,7 +370,7 @@ export const ImageJSON = [
     imgCategory: 'event',
     imgOrientation: 'portrait',
     imgPolaroid: false,
-    source: './assets/images/event-michael.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/event-michael.jpg',
   },
   {
     imgSubject: 'Our Lady Of Grace - Fall Festival',
@@ -377,7 +378,7 @@ export const ImageJSON = [
     imgCategory: 'event',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/event-olg-1.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/event-olg-1.jpg',
   },
   {
     imgSubject: 'David',
@@ -385,7 +386,7 @@ export const ImageJSON = [
     imgCategory: 'event',
     imgOrientation: 'landscape',
     imgPolaroid: true,
-    source: './assets/images/event-pb-1.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/event-pb-1.jpg',
   },
   {
     imgSubject: 'Paint Ball',
@@ -393,7 +394,7 @@ export const ImageJSON = [
     imgCategory: 'event',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/event-pb-2.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/event-pb-2.jpg',
   },
   /* Wedding */
   {
@@ -402,7 +403,7 @@ export const ImageJSON = [
     imgCategory: 'wedding',
     imgOrientation: 'landscape',
     imgPolaroid: true,
-    source: './assets/images/wedding-nelson-rings.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/wedding-nelson-rings.jpg',
   },
   {
     imgSubject: "Tori's Wedding",
@@ -410,7 +411,7 @@ export const ImageJSON = [
     imgCategory: 'wedding',
     imgOrientation: 'portrait',
     imgPolaroid: true,
-    source: './assets/images/wedding-tori.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/wedding-tori.jpg',
   },
   {
     imgSubject: "Tori's Wedding",
@@ -418,7 +419,7 @@ export const ImageJSON = [
     imgCategory: 'wedding',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/wedding-tori-1.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/wedding-tori-1.jpg',
   },
   /* Cosplay */
   {
@@ -427,7 +428,7 @@ export const ImageJSON = [
     imgCategory: 'cosplay',
     imgOrientation: 'portrait',
     imgPolaroid: false,
-    source: './assets/images/cosplay-jay-link-1.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/cosplay-jay-link-1.jpg',
   },
   {
     imgSubject: 'Link - Jay B',
@@ -435,7 +436,7 @@ export const ImageJSON = [
     imgCategory: 'cosplay',
     imgOrientation: 'portrait',
     imgPolaroid: false,
-    source: './assets/images/cosplay-jay-link-2.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/cosplay-jay-link-2.jpg',
   },
   {
     imgSubject: 'Link - Jay B',
@@ -443,7 +444,7 @@ export const ImageJSON = [
     imgCategory: 'cosplay',
     imgOrientation: 'portrait',
     imgPolaroid: false,
-    source: './assets/images/cosplay-jay-link-3.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/cosplay-jay-link-3.jpg',
   },
   {
     imgSubject: 'Link - Jay B',
@@ -451,7 +452,7 @@ export const ImageJSON = [
     imgCategory: 'cosplay',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/cosplay-jay-link-4.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/cosplay-jay-link-4.jpg',
   },
   /* Prodcut */
   {
@@ -460,7 +461,7 @@ export const ImageJSON = [
     imgCategory: 'product',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/product-jay-1.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/product-jay-1.jpg',
   },
   {
     imgSubject: 'Washington Apple',
@@ -468,7 +469,8 @@ export const ImageJSON = [
     imgCategory: 'product',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/product-washington-apple.jpg',
+    source:
+      'https://onsmallphoto.s3.amazonaws.com/product-washington-apple.jpg',
   },
   /* Nature | Pets */
   {
@@ -477,7 +479,7 @@ export const ImageJSON = [
     imgCategory: 'product',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/nature-snow-dogs.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/nature-snow-dogs.jpg',
   },
   {
     imgSubject: 'Ducks',
@@ -485,7 +487,7 @@ export const ImageJSON = [
     imgCategory: 'product',
     imgOrientation: 'landscape',
     imgPolaroid: true,
-    source: './assets/images/nature-ducks.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/nature-ducks.jpg',
   },
   {
     imgSubject: 'Flower',
@@ -493,7 +495,7 @@ export const ImageJSON = [
     imgCategory: 'product',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/nature-flower.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/nature-flower.jpg',
   },
   /* Award Winning */
   {
@@ -502,6 +504,6 @@ export const ImageJSON = [
     imgCategory: 'award',
     imgOrientation: 'landscape',
     imgPolaroid: false,
-    source: './assets/images/award-dusty.jpg',
+    source: 'https://onsmallphoto.s3.amazonaws.com/award-dusty.jpg',
   },
 ]
