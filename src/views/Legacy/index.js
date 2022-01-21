@@ -11,6 +11,7 @@ const Legacy = () => {
 
     tl.from('.d60', { duration: 2, x: -1280, opacity: 0 })
       .from('.d5000', { duration: 2, x: -1280, opacity: 0 })
+      .from('.d300s', { duration: 2, x: -1280, opacity: 0 })
       .from('.d7500', { duration: 2, x: -1280, opacity: 0 })
       .from('.z7ii', { duration: 2, x: -1280, opacity: 0 })
   }, [])
@@ -27,6 +28,11 @@ const Legacy = () => {
                 src="./assets/images/d5000.png"
                 alt="d5000"
                 className="d5000"
+              />
+              <img
+                src="./assets/images/d300s.png"
+                alt="d300s"
+                className="d300s"
               />
               <img
                 src="./assets/images/d7500.png"
