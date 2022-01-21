@@ -221,7 +221,7 @@ const Rates = () => {
             <div className="col-lg-3">
               <div className="card bg-transparent border-0">
                 <img
-                  src="https://via.placeholder.com/875x625"
+                  src="https://onsmallphoto.s3.amazonaws.com/landscape-dc.jpg"
                   className="card-img-top"
                   alt="..."
                 />
@@ -345,7 +345,7 @@ const Rates = () => {
             <div className="col-lg-3">
               <div className="card bg-transparent border-0">
                 <img
-                  src="https://via.placeholder.com/875x625"
+                  src="https://onsmallphoto.s3.amazonaws.com/nature-ducks.jpg"
                   className="card-img-top"
                   alt="..."
                 />
@@ -417,7 +417,7 @@ const Rates = () => {
             <div className="col-lg-3">
               <div className="card bg-transparent border-0">
                 <img
-                  src="https://via.placeholder.com/875x625"
+                  src="https://onsmallphoto.s3.amazonaws.com/cosplay-jay-link-4.jpg"
                   className="card-img-top"
                   alt="..."
                 />
