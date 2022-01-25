@@ -75,7 +75,7 @@ const Rates = () => {
             <div className="col-lg-3">
               <div className="card bg-transparent border-0">
                 <img
-                  src="https://via.placeholder.com/875x625"
+                  src="https://onsmallphoto.s3.amazonaws.com/1sp-logo.png"
                   className="card-img-top"
                   alt="..."
                 />
@@ -92,7 +92,7 @@ const Rates = () => {
             <div className="col-lg-3">
               <div className="card bg-transparent border-0">
                 <img
-                  src="https://via.placeholder.com/875x625"
+                  src="https://onsmallphoto.s3.amazonaws.com/1sp-logo.png"
                   className="card-img-top"
                   alt="..."
                 />
@@ -147,7 +147,7 @@ const Rates = () => {
             <div className="col-lg-3">
               <div className="card bg-transparent border-0">
                 <img
-                  src="https://via.placeholder.com/875x625"
+                  src="https://onsmallphoto.s3.amazonaws.com/1sp-logo.png"
                   className="card-img-top"
                   alt="..."
                 />
@@ -183,7 +183,7 @@ const Rates = () => {
             <div className="col-lg-3">
               <div className="card bg-transparent border-0">
                 <img
-                  src="https://via.placeholder.com/875x625"
+                  src="https://onsmallphoto.s3.amazonaws.com/1sp-logo.png"
                   className="card-img-top"
                   alt="..."
                 />
@@ -239,7 +239,7 @@ const Rates = () => {
             <div className="col-lg-3">
               <div className="card bg-transparent border-0">
                 <img
-                  src="https://via.placeholder.com/875x625"
+                  src="https://onsmallphoto.s3.amazonaws.com/1sp-logo.png"
                   className="card-img-top"
                   alt="..."
                 />
@@ -256,7 +256,7 @@ const Rates = () => {
             <div className="col-lg-3">
               <div className="card bg-transparent border-0">
                 <img
-                  src="https://via.placeholder.com/875x625"
+                  src="https://onsmallphoto.s3.amazonaws.com/1sp-logo.png"
                   className="card-img-top"
                   alt="..."
                 />
@@ -292,7 +292,7 @@ const Rates = () => {
             <div className="col-lg-3">
               <div className="card bg-transparent border-0">
                 <img
-                  src="https://via.placeholder.com/875x625"
+                  src="https://onsmallphoto.s3.amazonaws.com/1sp-logo.png"
                   className="card-img-top"
                   alt="..."
                 />
@@ -309,7 +309,7 @@ const Rates = () => {
             <div className="col-lg-3">
               <div className="card bg-transparent border-0">
                 <img
-                  src="https://via.placeholder.com/875x625"
+                  src="https://onsmallphoto.s3.amazonaws.com/1sp-logo.png"
                   className="card-img-top"
                   alt="..."
                 />
@@ -379,7 +379,7 @@ const Rates = () => {
             <div className="col-lg-3">
               <div className="card bg-transparent border-0">
                 <img
-                  src="https://via.placeholder.com/875x625"
+                  src="https://onsmallphoto.s3.amazonaws.com/1sp-logo.png"
                   className="card-img-top"
                   alt="..."
                 />
@@ -398,7 +398,7 @@ const Rates = () => {
             <div className="col-lg-3">
               <div className="card bg-transparent border-0">
                 <img
-                  src="https://via.placeholder.com/875x625"
+                  src="https://onsmallphoto.s3.amazonaws.com/1sp-logo.png"
                   className="card-img-top"
                   alt="..."
                 />
