@@ -48,12 +48,12 @@ const Contact = ({ createInbox, inbox: { error, success } }) => {
     })
       .from('.polaroid-2', {
         duration: 2,
-        y: -1080,
+        x: -1280,
         opacity: 0,
       })
       .from('.polaroid-3', {
         duration: 2,
-        x: 1280,
+        x: -1280,
         opacity: 0,
       })
     tl2
