@@ -1,3 +1,4 @@
+const sslRedirect = require('heroku-ssl-redirect')
 const express = require('express')
 const mongoose = require('mongoose')
 const cors = require('cors')
@@ -19,6 +20,9 @@ mongoose
 
 // API Routes
 app.use('/api/inbox', require('./routes/inboxRoutes'))
+
+// enable ssl redirect
+app.use(sslRedirect())
 
 if (process.env.NODE_ENV === 'production') {
   //set static folder
