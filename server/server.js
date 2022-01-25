@@ -6,6 +6,8 @@ const app = express()
 const path = require('path')
 require('dotenv').config()
 
+// enable ssl redirect
+app.use(sslRedirect())
 app.use(express.json())
 app.use(cors())
 
@@ -20,9 +22,6 @@ mongoose
 
 // API Routes
 app.use('/api/inbox', require('./routes/inboxRoutes'))
-
-// enable ssl redirect
-app.use(sslRedirect())
 
 if (process.env.NODE_ENV === 'production') {
   //set static folder
