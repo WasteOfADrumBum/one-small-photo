@@ -72,7 +72,7 @@ const Rates = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 d-none">
               <div className="card bg-transparent border-0">
                 <img
                   src="https://onsmallphoto.s3.amazonaws.com/1sp-logo.png"
@@ -89,7 +89,7 @@ const Rates = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 d-none">
               <div className="card bg-transparent border-0">
                 <img
                   src="https://onsmallphoto.s3.amazonaws.com/1sp-logo.png"
@@ -121,7 +121,10 @@ const Rates = () => {
                     <span className="text-warning">$</span>150 –{' '}
                     <span className="text-warning">$</span>370+
                   </p>
-                  <p className="card-text">Desc</p>
+                  <p className="card-text">
+                    Senior portraits, family portraits, Prom Photography,
+                    Graduation Photoshoots, and professional headshots
+                  </p>
                 </div>
               </div>
             </div>
@@ -236,7 +239,7 @@ const Rates = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 d-none">
               <div className="card bg-transparent border-0">
                 <img
                   src="https://onsmallphoto.s3.amazonaws.com/1sp-logo.png"
@@ -253,7 +256,7 @@ const Rates = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 d-none">
               <div className="card bg-transparent border-0">
                 <img
                   src="https://onsmallphoto.s3.amazonaws.com/1sp-logo.png"
@@ -372,7 +375,10 @@ const Rates = () => {
                     <span className="text-warning">$</span>150 –{' '}
                     <span className="text-warning">$</span>300
                   </p>
-                  <p className="card-text">Desc</p>
+                  <p className="card-text">
+                    Catching athletes, coaches, and even fans at the perfect
+                    moment
+                  </p>
                 </div>
               </div>
             </div>
@@ -391,7 +397,11 @@ const Rates = () => {
                     <span className="text-warning">$</span>400 –{' '}
                     <span className="text-warning">$</span>1,000 per session
                   </p>
-                  <p className="card-text">Desc</p>
+                  <p className="card-text">
+                    Showcases and glamorizes fashion clothing, shoes, and
+                    accessories to make them more desirable to consumers.
+                    Publishing in magazines and online.{' '}
+                  </p>
                 </div>
               </div>
             </div>
