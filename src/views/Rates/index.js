@@ -122,8 +122,8 @@ const Rates = () => {
                     <span className="text-warning">$</span>370+
                   </p>
                   <p className="card-text">
-                    Senior portraits, family portraits, Prom Photography,
-                    Graduation Photoshoots, and professional headshots
+                    Senior portraits, family portraits, Prom Photography, and
+                    Graduation Photoshoots
                   </p>
                 </div>
               </div>
@@ -341,7 +341,10 @@ const Rates = () => {
                     <span className="text-warning">$</span>300 –{' '}
                     <span className="text-warning">$</span>1000
                   </p>
-                  <p className="card-text">Desc</p>
+                  <p className="card-text">
+                    As a fellow musician nothing screams legit like epic cover
+                    art on your next album
+                  </p>
                 </div>
               </div>
             </div>
@@ -400,7 +403,6 @@ const Rates = () => {
                   <p className="card-text">
                     Showcases and glamorizes fashion clothing, shoes, and
                     accessories to make them more desirable to consumers.
-                    Publishing in magazines and online.{' '}
                   </p>
                 </div>
               </div>
@@ -439,7 +441,11 @@ const Rates = () => {
                     <span className="text-warning">$</span>150 –{' '}
                     <span className="text-warning">$</span>370+
                   </p>
-                  <p className="card-text">Desc</p>
+                  <p className="card-text">
+                    Costume play, is a fun way for people to express their love
+                    for their favourite characters from films, books, comics,
+                    and more.
+                  </p>
                 </div>
               </div>
             </div>
