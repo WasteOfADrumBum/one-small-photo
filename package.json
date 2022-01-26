@@ -1,7 +1,23 @@
 {
 	"name": "one-small-photo",
 	"version": "0.1.0",
+	"description": "One Small Photo React App",
 	"private": true,
+	"homepage": ".",
+	"author": {
+		"name": "Joshua M. Small",
+		"email": "onesmallphoto@gmail.com",
+		"url": "https://www.onesmallphoto.com"
+	},
+	"contributors": [
+		{
+			"name": "Joshua M. Small",
+			"email": "onesmallphoto@gmail.com",
+			"url": "https://www.onesmallphoto.com"
+		}
+	],
+	"license": "MIT",
+	"repository": "https://github.com/WasteOfADrumBum/one-small-photo",
 	"dependencies": {
 		"@auth0/auth0-react": "^1.8.0",
 		"@popperjs/core": "^2.11.2",
@@ -58,7 +74,9 @@
 		"production": [
 			">0.2%",
 			"not dead",
-			"not op_mini all"
+			"not op_mini all",
+			"last 2 versions",
+			"not ie <= 8"
 		],
 		"development": [
 			"last 1 chrome version",
@@ -77,5 +95,8 @@
 	"peerDependencies": {
 		"react": ">=17.0.2",
 		"react-dom": ">=17.0.2"
-	}
+	},
+	"keywords": [
+		"photography"
+	]
 }

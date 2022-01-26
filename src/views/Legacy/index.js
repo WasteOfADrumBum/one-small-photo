@@ -19,8 +19,10 @@ const Legacy = () => {
   return (
     <div className="legacy mt-5">
       <div className="container">
+        {/* The Journey */}
         <h1 className="my-5 pt-5 pb-2 border-bottom">The Journey</h1>
         <div className="row d-flex justify-content-center align-items-center">
+          {/* Camera Legacy Animation */}
           <div className="col-md-6 mb-5">
             <div className="cameraGen d-grid p-2">
               <img src="./assets/images/d60.png" alt="d60" className="d60" />
@@ -42,6 +44,7 @@ const Legacy = () => {
               <img src="./assets/images/z7ii.png" alt="z7ii" className="z7ii" />
             </div>
           </div>
+          {/* Legacy Info */}
           <div className="col-md-4 text-center">
             <p>
               For the {year - 1989} years I've been on this planet I've been
@@ -65,6 +68,7 @@ const Legacy = () => {
             </div>
           </div>
         </div>
+        {/* The Gear */}
         <h1 className="my-5 pt-5 pb-2 border-bottom">The Gear</h1>
         <div className="row d-flex justify-content-center align-items-center">
           <div className="col-md-4 text-center mb-5">
@@ -90,6 +94,7 @@ const Legacy = () => {
             />
           </div>
         </div>
+        {/* Gear List */}
         <div className="row my-5 d-flex justify-content-center align-items-center">
           <div className="col-md-8 text-center mb-5">
             <div className="row">
@@ -164,6 +169,41 @@ const Legacy = () => {
               </div>
             </div>
           </div>
+        </div>
+        {/* Branding */}
+        <div className="row my-5 d-flex justify-content-center align-items-center text-center">
+          <div className="col-md-2">
+            <img
+              src="./assets/images/logo-nikon.svg"
+              alt="paul c. buff"
+              className="img-fluid w-50 logo"
+            />
+            <p className="my-3 cedarville">Nikon</p>
+          </div>
+          <div className="col-md-2">
+            <img
+              src="./assets/images/logo-ps.svg"
+              alt="paul c. buff"
+              className="img-fluid w-50 logo"
+            />
+            <p className="my-3 cedarville">Adobe Photoshop</p>
+          </div>
+          <div className="col-md-2">
+            <img
+              src="./assets/images/logo-lr.svg"
+              alt="paul c. buff"
+              className="img-fluid w-50 logo"
+            />
+            <p className="my-3 cedarville">Adobe Lighroom</p>
+          </div>
+          {/* <div className="col-md-2">
+            <img
+              src="./assets/images/logo-pcb.png"
+              alt="paul c. buff"
+              className="img-fluid w-50 logo"
+            />
+            <p className="my-3 cedarville">Paul C. Buff Lighting</p>
+          </div> */}
         </div>
       </div>
     </div>

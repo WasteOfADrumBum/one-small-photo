@@ -17,7 +17,7 @@ const Rates = () => {
         </p>
         <div className="text-center m-5">
           <div className="row mb-3">
-            <div className="col-lg-3">
+            <div className="col-lg-3 mb-4">
               <div className="card bg-transparent border-0">
                 <img
                   src="https://onsmallphoto.s3.amazonaws.com/wedding-tori-1.jpg"
@@ -32,11 +32,10 @@ const Rates = () => {
                     <span className="text-warning">$</span>1,500 –{' '}
                     <span className="text-warning">$</span>3,500
                   </p>
-                  <p className="card-text">Desc</p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 mb-4">
               <div className="card bg-transparent border-0">
                 <img
                   src="https://onsmallphoto.s3.amazonaws.com/wedding-nelson-rings.jpg"
@@ -51,11 +50,10 @@ const Rates = () => {
                     <span className="text-warning">$</span>150 –{' '}
                     <span className="text-warning">$</span>500
                   </p>
-                  <p className="card-text">Desc</p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 mb-4">
               <div className="card bg-transparent border-0">
                 <img
                   src="https://onsmallphoto.s3.amazonaws.com/event-olg-1.jpg"
@@ -68,7 +66,6 @@ const Rates = () => {
                     <span className="text-warning">$</span>500 –{' '}
                     <span className="text-warning">$</span>1,000
                   </p>
-                  <p className="card-text">Desc</p>
                 </div>
               </div>
             </div>
@@ -85,7 +82,6 @@ const Rates = () => {
                     <span className="text-warning">$</span>145 –{' '}
                     <span className="text-warning">$</span>500
                   </p>
-                  <p className="card-text">Desc</p>
                 </div>
               </div>
             </div>
@@ -102,11 +98,10 @@ const Rates = () => {
                     <span className="text-warning">$</span>125 –{' '}
                     <span className="text-warning">$</span>350
                   </p>
-                  <p className="card-text">Desc</p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 mb-4">
               <div className="card bg-transparent border-0">
                 <img
                   src="https://onsmallphoto.s3.amazonaws.com/portrait-cassie-1.jpg"
@@ -121,14 +116,10 @@ const Rates = () => {
                     <span className="text-warning">$</span>150 –{' '}
                     <span className="text-warning">$</span>370+
                   </p>
-                  <p className="card-text">
-                    Senior portraits, family portraits, Prom Photography, and
-                    Graduation Photoshoots
-                  </p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 mb-4">
               <div className="card bg-transparent border-0">
                 <img
                   src="https://onsmallphoto.s3.amazonaws.com/portrait-owen-2.jpg"
@@ -143,11 +134,10 @@ const Rates = () => {
                     <span className="text-warning">$</span>320 –{' '}
                     <span className="text-warning">$</span>650
                   </p>
-                  <p className="card-text">Desc</p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 mb-4">
               <div className="card bg-transparent border-0">
                 <img
                   src="https://onsmallphoto.s3.amazonaws.com/1sp-logo.png"
@@ -162,11 +152,10 @@ const Rates = () => {
                     <span className="text-warning">$</span>350 –{' '}
                     <span className="text-warning">$</span>1,500+
                   </p>
-                  <p className="card-text">Desc</p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 mb-4">
               <div className="card bg-transparent border-0">
                 <img
                   src="https://onsmallphoto.s3.amazonaws.com/nature-snow-dogs.jpg"
@@ -179,11 +168,10 @@ const Rates = () => {
                     <span className="text-warning">$</span>150 –{' '}
                     <span className="text-warning">$</span>300
                   </p>
-                  <p className="card-text">Desc</p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 mb-4">
               <div className="card bg-transparent border-0">
                 <img
                   src="https://onsmallphoto.s3.amazonaws.com/1sp-logo.png"
@@ -198,11 +186,10 @@ const Rates = () => {
                     <span className="text-warning">$</span>150 –{' '}
                     <span className="text-warning">$</span>1,500
                   </p>
-                  <p className="card-text">Desc</p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 mb-4">
               <div className="card bg-transparent border-0">
                 <img
                   src="https://onsmallphoto.s3.amazonaws.com/product-jay-1.jpg"
@@ -217,11 +204,10 @@ const Rates = () => {
                     <span className="text-warning">$</span>35 –{' '}
                     <span className="text-warning">$</span>170 per image
                   </p>
-                  <p className="card-text">Desc</p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 mb-4">
               <div className="card bg-transparent border-0">
                 <img
                   src="https://onsmallphoto.s3.amazonaws.com/landscape-dc.jpg"
@@ -235,7 +221,6 @@ const Rates = () => {
                   <p className="card-title">
                     <span className="text-warning">$</span>250+ per image
                   </p>
-                  <p className="card-text">Desc</p>
                 </div>
               </div>
             </div>
@@ -252,7 +237,6 @@ const Rates = () => {
                     <span className="text-warning">$</span>75 –{' '}
                     <span className="text-warning">$</span>125
                   </p>
-                  <p className="card-text">Desc</p>
                 </div>
               </div>
             </div>
@@ -271,11 +255,10 @@ const Rates = () => {
                     <span className="text-warning">$</span>100 –{' '}
                     <span className="text-warning">$</span>300
                   </p>
-                  <p className="card-text">Desc</p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 mb-4">
               <div className="card bg-transparent border-0">
                 <img
                   src="https://onsmallphoto.s3.amazonaws.com/portrait-sirina-photobooth.png"
@@ -288,11 +271,10 @@ const Rates = () => {
                     <span className="text-warning">$</span>75 –{' '}
                     <span className="text-warning">$</span>325
                   </p>
-                  <p className="card-text">Desc</p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 mb-4">
               <div className="card bg-transparent border-0">
                 <img
                   src="https://onsmallphoto.s3.amazonaws.com/1sp-logo.png"
@@ -305,11 +287,10 @@ const Rates = () => {
                     <span className="text-warning">$</span>150 –{' '}
                     <span className="text-warning">$</span>500+
                   </p>
-                  <p className="card-text">Desc</p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 mb-4">
               <div className="card bg-transparent border-0">
                 <img
                   src="https://onsmallphoto.s3.amazonaws.com/1sp-logo.png"
@@ -324,11 +305,10 @@ const Rates = () => {
                     <span className="text-warning">$</span>150 –{' '}
                     <span className="text-warning">$</span>370
                   </p>
-                  <p className="card-text">Desc</p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 mb-4">
               <div className="card bg-transparent border-0">
                 <img
                   src="https://onsmallphoto.s3.amazonaws.com/portrait-nova.jpg"
@@ -341,14 +321,10 @@ const Rates = () => {
                     <span className="text-warning">$</span>300 –{' '}
                     <span className="text-warning">$</span>1000
                   </p>
-                  <p className="card-text">
-                    As a fellow musician nothing screams legit like epic cover
-                    art on your next album
-                  </p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 mb-4">
               <div className="card bg-transparent border-0">
                 <img
                   src="https://onsmallphoto.s3.amazonaws.com/nature-ducks.jpg"
@@ -361,11 +337,10 @@ const Rates = () => {
                     <span className="text-warning">$</span>200 –{' '}
                     <span className="text-warning">$</span>500
                   </p>
-                  <p className="card-text">Desc</p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 mb-4">
               <div className="card bg-transparent border-0">
                 <img
                   src="https://onsmallphoto.s3.amazonaws.com/event-pb-2.jpg"
@@ -378,14 +353,10 @@ const Rates = () => {
                     <span className="text-warning">$</span>150 –{' '}
                     <span className="text-warning">$</span>300
                   </p>
-                  <p className="card-text">
-                    Catching athletes, coaches, and even fans at the perfect
-                    moment
-                  </p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 mb-4">
               <div className="card bg-transparent border-0">
                 <img
                   src="https://onsmallphoto.s3.amazonaws.com/1sp-logo.png"
@@ -400,14 +371,10 @@ const Rates = () => {
                     <span className="text-warning">$</span>400 –{' '}
                     <span className="text-warning">$</span>1,000 per session
                   </p>
-                  <p className="card-text">
-                    Showcases and glamorizes fashion clothing, shoes, and
-                    accessories to make them more desirable to consumers.
-                  </p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 mb-4">
               <div className="card bg-transparent border-0">
                 <img
                   src="https://onsmallphoto.s3.amazonaws.com/1sp-logo.png"
@@ -422,11 +389,10 @@ const Rates = () => {
                     <span className="text-warning">$</span>35 –{' '}
                     <span className="text-warning">$</span>150 per image
                   </p>
-                  <p className="card-text">Desc</p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 mb-4">
               <div className="card bg-transparent border-0">
                 <img
                   src="https://onsmallphoto.s3.amazonaws.com/cosplay-jay-link-4.jpg"
@@ -441,15 +407,10 @@ const Rates = () => {
                     <span className="text-warning">$</span>150 –{' '}
                     <span className="text-warning">$</span>370+
                   </p>
-                  <p className="card-text">
-                    Costume play, is a fun way for people to express their love
-                    for their favourite characters from films, books, comics,
-                    and more.
-                  </p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 mb-4">
               <div className="card bg-transparent border-0">
                 <img
                   src="https://onsmallphoto.s3.amazonaws.com/boudoir-misha-1.jpg"
@@ -464,7 +425,6 @@ const Rates = () => {
                     <span className="text-warning">$</span>150 –{' '}
                     <span className="text-warning">$</span>1,200 per session
                   </p>
-                  <p className="card-text">Desc</p>
                 </div>
               </div>
             </div>
