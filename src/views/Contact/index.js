@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import emailjs from '@emailjs/browser'
 import { gsap } from 'gsap'
 /* https://github.com/arqex/react-datetime */
 import Datetime from 'react-datetime'
@@ -7,6 +8,7 @@ import { createInbox } from '../../actions'
 import './_contact.scss'
 
 const Contact = ({ createInbox, inbox: { error, success } }) => {
+  const form = React.useRef()
   const [formData, setFormData] = React.useState({
     firstName: '',
     lastName: '',
@@ -135,6 +137,23 @@ const Contact = ({ createInbox, inbox: { error, success } }) => {
   const onSubmit = (e) => {
     e.preventDefault()
     createInbox(formData)
+
+    // send email to onesmallphoto@gmail.com
+    emailjs
+      .sendForm(
+        'service_vvb0ieb',
+        '1sp-contact-template',
+        form.current,
+        'user_FMhz3gYNHupI7S4Cgmk9M',
+      )
+      .then(
+        (result) => {
+          console.log(result.text)
+        },
+        (error) => {
+          console.log(error.text)
+        },
+      )
   }
 
   /* If successful submission clearn form data */
@@ -175,7 +194,7 @@ const Contact = ({ createInbox, inbox: { error, success } }) => {
         <h1 className="text-start my-5 pt-5 pb-2 border-bottom">
           Let's Connect
         </h1>
-        <form className="px-5" onSubmit={(e) => onSubmit(e)}>
+        <form ref={form} className="px-5" onSubmit={(e) => onSubmit(e)}>
           <div className="row mb-3">
             <div className="col-md-6">
               <label htmlFor="inputFirstName" className="form-label">
