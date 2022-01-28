@@ -37,6 +37,7 @@
 		"heroku-ssl-redirect": "^0.1.1",
 		"highcharts": "^9.3.2",
 		"highcharts-react-official": "^3.1.0",
+		"img-comparison-slider": "^7.4.3",
 		"jquery": "^3.6.0",
 		"moment": "^2.29.1",
 		"mongodb": "^4.2.2",
