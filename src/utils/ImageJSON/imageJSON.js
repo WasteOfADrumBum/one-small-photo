@@ -130,6 +130,14 @@ export const ImageJSON = [
     source: 'https://onsmallphoto.s3.amazonaws.com/model-amber-2.jpg',
   },
   {
+    imgSubject: 'Amber',
+    imgCaption: 'Studio - Greensboro NC',
+    imgCategory: 'model',
+    imgOrientation: 'portrait',
+    imgPolaroid: false,
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-amber-3.jpg',
+  },
+  {
     imgSubject: 'Brittany',
     imgCaption: 'Studio - Greensboro NC',
     imgCategory: 'model',
