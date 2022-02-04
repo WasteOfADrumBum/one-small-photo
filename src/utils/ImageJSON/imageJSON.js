@@ -146,6 +146,14 @@ export const ImageJSON = [
     source: 'https://onsmallphoto.s3.amazonaws.com/model-brittany-2.jpg',
   },
   {
+    imgSubject: 'Brittany',
+    imgCaption: 'Studio - Greensboro NC',
+    imgCategory: 'model',
+    imgOrientation: 'landscape',
+    imgPolaroid: false,
+    source: 'https://onsmallphoto.s3.amazonaws.com/model-brittany-4.png',
+  },
+  {
     imgSubject: 'Casey',
     imgCaption: 'Greensboro NC',
     imgCategory: 'model',
