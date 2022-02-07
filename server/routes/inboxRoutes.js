@@ -79,7 +79,6 @@ router.post(
       .withMessage('Select a preferred method of contact'),
   ],
   async (req, res) => {
-    console.log(req.body)
     const {
       firstName,
       lastName,

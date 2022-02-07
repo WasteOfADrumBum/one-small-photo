@@ -1,13 +1,24 @@
 import React, { useState } from 'react'
+import { connect } from 'react-redux'
+
 import Carousel, { Modal, ModalGateway } from 'react-images'
 import { XMasonry, XBlock } from 'react-xmasonry'
 import './_masonryGallery.scss'
-import { ImageJSON } from '../../utils'
+import { readAllCMSEntries } from '../../actions'
 
-const MasonryGallery = ({ category }) => {
+const MasonryGallery = ({
+  category,
+  readAllCMSEntries,
+  cms: { cmsEntries, loading: cmsEntries_loading },
+}) => {
   const [filteredCategories, setFilteredCategories] = useState([])
   const [currentImage, setCurrentImage] = useState(0)
   const [modalIsOpen, setModalIsOpen] = useState(false)
+
+  /* Load all entries */
+  React.useEffect(() => {
+    readAllCMSEntries()
+  }, [readAllCMSEntries])
 
   const shuffle = (array) => {
     let currentIndex = array.length,
@@ -30,7 +41,7 @@ const MasonryGallery = ({ category }) => {
   }
   React.useEffect(() => {
     const filterByCategory = (category) => {
-      let shuffleArr = shuffle(ImageJSON)
+      let shuffleArr = shuffle(cmsEntries)
       let filteredArr = []
 
       switch (category) {
@@ -68,7 +79,7 @@ const MasonryGallery = ({ category }) => {
     if (category && (category !== '' || category !== undefined)) {
       filterByCategory(category)
     }
-  }, [category])
+  }, [category, cmsEntries])
 
   const openLightbox = (e, index) => {
     setCurrentImage(index)
@@ -82,7 +93,9 @@ const MasonryGallery = ({ category }) => {
 
   return (
     <div className="masonryGallery">
-      {category && (category !== '' || category !== undefined) ? (
+      {!cmsEntries_loading ? (
+        <p>Loading...</p>
+      ) : (
         <>
           <XMasonry>
             {filteredCategories.map((image, i) => {
@@ -116,11 +129,16 @@ const MasonryGallery = ({ category }) => {
             ) : null}
           </ModalGateway>
         </>
-      ) : (
-        <p>Loading...</p>
       )}
     </div>
   )
 }
 
-export default MasonryGallery
+const mapStateToProps = (state) => ({
+  CMSReducer: state.CMSReducer,
+  cms: state.cms,
+})
+
+export default connect(mapStateToProps, {
+  readAllCMSEntries,
+})(MasonryGallery)

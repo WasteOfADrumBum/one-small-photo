@@ -22,6 +22,7 @@ mongoose
 
 // API Routes
 app.use('/api/inbox', require('./routes/inboxRoutes'))
+app.use('/api/cms', require('./routes/cmsRoutes'))
 
 if (process.env.NODE_ENV === 'production') {
   //set static folder

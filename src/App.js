@@ -15,6 +15,8 @@ import {
   Contact,
   Inbox,
   Rates,
+  PhotoCMS,
+  PhotoCMSUpdate,
 } from './views'
 
 export default function App() {
@@ -52,6 +54,14 @@ export default function App() {
             <Route
               path="/inbox"
               element={<ProtectedRoute component={Inbox} />}
+            />
+            <Route
+              path="/cms"
+              element={<ProtectedRoute component={PhotoCMS} />}
+            />
+            <Route
+              path="update-cms/:id"
+              element={<ProtectedRoute component={PhotoCMSUpdate} />}
             />
             {/* "No Match" Route */}
             <Route

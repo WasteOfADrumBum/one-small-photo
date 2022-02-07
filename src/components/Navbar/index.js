@@ -70,11 +70,18 @@ const Navbar = () => {
             {isAuthenticated &&
               (user.email === 'jmsmall89@gmail.com' ||
                 user.email === 'onesmallphoto@gmail.com') && (
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/inbox">
-                    Inbox
-                  </NavLink>
-                </li>
+                <>
+                  <li className="nav-item">
+                    <NavLink className="nav-link" to="/inbox">
+                      Inbox
+                    </NavLink>
+                  </li>
+                  <li className="nav-item">
+                    <NavLink className="nav-link" to="/cms">
+                      Admin CMS
+                    </NavLink>
+                  </li>
+                </>
               )}
           </ul>
         </div>

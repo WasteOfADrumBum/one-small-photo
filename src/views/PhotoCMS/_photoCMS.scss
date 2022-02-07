@@ -1,0 +1,18 @@
+.photoCMS {
+    .actions {
+        justify-content: space-evenly;
+    }
+
+    .nav-link {
+        cursor: pointer;
+    }
+
+    .photoList {
+        .row {
+            &:nth-child(even) {
+                background-color: rgba(0, 0, 0, .1);
+            }
+        }
+
+    }
+}

@@ -49,8 +49,6 @@ const Inbox = ({
     deleteInbox(id)
   }
 
-  console.log(inboxEntries)
-
   return (
     <div className="inbox mt-5">
       <div className="container">
