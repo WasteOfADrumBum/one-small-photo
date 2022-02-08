@@ -1,5 +1,6 @@
 export { default as Navbar } from './Navbar'
 export { default as Footer } from './Footer'
+export { default as ScrollToTop } from './ScrollToTop'
 export { default as MasonryGallery } from './MasonryGallery'
 export { default as CategoryInfo } from './CategoryInfo'
 export { default as LoginButton } from './LoginButton'
