@@ -66,6 +66,7 @@ const PhotoCMSUpdate = ({
   // Create an entry
   const onSubmit = (e) => {
     e.preventDefault()
+    updateCMS(id, formData)
     navigate('../cms')
   }
 
