@@ -110,10 +110,10 @@ const Footer = () => {
               </p>
               <p>
                 <i className="bi bi-envelope me-3"></i>
-                onesmallphoto@gmail.com
+                sample-6636c9d4@example.com
               </p>
               <p>
-                <i className="bi bi-phone me-3"></i> 828.333.8983
+                <i className="bi bi-phone me-3"></i> 202-555-0100
               </p>
             </div>
           </div>

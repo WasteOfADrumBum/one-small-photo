@@ -68,8 +68,8 @@ const Navbar = () => {
               </NavLink>
             </li>
             {isAuthenticated &&
-              (user.email === 'jmsmall89@gmail.com' ||
-                user.email === 'onesmallphoto@gmail.com') && (
+              (user.email === 'sample-52e532df@example.com' ||
+                user.email === 'sample-6636c9d4@example.com') && (
                 <>
                   <li className="nav-item">
                     <NavLink className="nav-link" to="/inbox">
