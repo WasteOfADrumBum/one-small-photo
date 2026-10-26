@@ -138,7 +138,7 @@ const Contact = ({ createInbox, inbox: { error, success } }) => {
     e.preventDefault()
     createInbox(formData)
 
-    // send email to onesmallphoto@gmail.com
+    // send email to sample-6636c9d4@example.com
     emailjs
       .sendForm(
         'service_vvb0ieb',
@@ -251,7 +251,7 @@ const Contact = ({ createInbox, inbox: { error, success } }) => {
                 onChange={(e) => onChange(e)}
                 className="form-control"
                 id="inputEmail"
-                placeholder="OneSmallPhoto@gmail.com"
+                placeholder="sample-6636c9d4@example.com"
                 aria-describedby="emailHelp"
               />
               <div id="emailHelp" className="form-text">
@@ -269,7 +269,7 @@ const Contact = ({ createInbox, inbox: { error, success } }) => {
                 onChange={(e) => onChange(e)}
                 className="form-control"
                 id="inputPhoneNumber"
-                placeholder="828-333-8983"
+                placeholder="202-555-0100"
                 aria-label="phoneHelp"
               />
             </div>
@@ -537,10 +537,10 @@ const Contact = ({ createInbox, inbox: { error, success } }) => {
             </div>
             <div className="col-md-2 text-center">
               <i className="bi bi-envelope fs-1" />
-              <p>OneSmallPhoto@gmail.com</p>
+              <p>sample-6636c9d4@example.com</p>
             </div>
             <div className="col-md-2 text-center">
-              <i className="bi bi-phone fs-1" /> <p>828.333.8983</p>
+              <i className="bi bi-phone fs-1" /> <p>202-555-0100</p>
             </div>
           </div>
         </div>

@@ -1,3 +1,5 @@
+> **Retired reference — archive preparation.** This project is no longer maintained or deployed. See [RETIREMENT.md](RETIREMENT.md) for preservation notes and cleanup limits.
+
 # **One Small Photo**
 
 ![GitHub license](https://img.shields.io/badge/Made%20by-%40WasteOfADrumBum-green)
@@ -134,5 +136,5 @@ TypeScript, as described on its official website, is a superset of JavaScript th
 
 - Joshua M Small
 - [GitHub Profile](https://github.com/WasteOfADrumBum)
-- <jmsmall89@gmail.com>
+- <sample-52e532df@example.com>
 - ![GitHub Followers](https://img.shields.io/github/followers/WasteOfADrumBum?label=Follow)

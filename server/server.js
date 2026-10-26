@@ -21,8 +21,8 @@ mongoose
   .catch((err) => console.log(err))
 
 // API Routes
-app.use('/api/inbox', require('./routes/inboxRoutes'))
-app.use('/api/cms', require('./routes/cmsRoutes'))
+app.use('/api/inbox', require('./middleware/retiredApi'))
+app.use('/api/cms', require('./middleware/retiredApi'))
 
 if (process.env.NODE_ENV === 'production') {
   //set static folder

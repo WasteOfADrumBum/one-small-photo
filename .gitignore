@@ -588,3 +588,9 @@ MigrationBackup/
 # End of https://www.gitignore.io/api/node,linux,macos,windows,intellij,webstorm,jetbrains,visualstudio,visualstudiocode
 
 .idea/
+# Retired certificates and local configuration must not be recommitted.
+*.key
+*.pem
+*.csr
+.env*
+!.env.example
